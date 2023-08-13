@@ -3,10 +3,17 @@ import { Injectable } from '@angular/core';
     providedIn: 'root'
 })
 export class CounterService {
-    allActions = 0;
+    activeToInactive = 0;
 
-    countActions() {
-       this.allActions =+ 1;
+    inactiveToActive = 0;
+
+    incermentActiveToInactive() {
+        this.activeToInactive += 1;
+
+    }
+    
+    incermentInactiveToActive() {
+        this.activeToInactive += 1;
 
     }
 }
