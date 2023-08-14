@@ -4,16 +4,13 @@ import { Injectable } from '@angular/core';
 })
 export class CounterService {
     activeToInactive = 0;
-
     inactiveToActive = 0;
 
     incermentActiveToInactive() {
-        this.activeToInactive += 1;
-
+        this.activeToInactive++;
     }
     
     incermentInactiveToActive() {
-        this.activeToInactive += 1;
-
+        this.inactiveToActive++;
     }
 }
